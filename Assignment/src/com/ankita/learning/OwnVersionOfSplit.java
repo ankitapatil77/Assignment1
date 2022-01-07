@@ -8,16 +8,24 @@ public class OwnVersionOfSplit {
 		System.out.println("Enter a string: ");
 		Scanner sc= new Scanner(System.in);
 		str=sc.nextLine();
-		StringTokenizer st=new StringTokenizer(str);
-		while(st.hasMoreTokens()) {
-			String token=st.nextToken();
-			System.out.println(token);
-		
+		System.out.println("enter breaking: ");
+		String breakString=sc.nextLine();
+
+        String[] arrOfStr = mySplit(str,breakString); 
+         System.out.println("Number of substrings: "+arrOfStr.length);
+         
+         for(int i=0; i< arrOfStr.length; i++)
+         {
+             System.out.println("str["+i+"] : "+arrOfStr[i]);
+         }
+ 
+    }
+
+	public static String[] mySplit(String str, String breakString) {
+		String[]string= str.split(breakString);
+		return string;
+	} 
+
 			
 		
-	}
-
-}
-
-
 }
