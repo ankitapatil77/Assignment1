@@ -16,7 +16,7 @@ public class OwnVersionOfSplit {
          
          for(int i=0; i< arrOfStr.length; i++)
          {
-             System.out.println("str["+i+"] : "+arrOfStr[i]);
+             System.out.println(arrOfStr[i]);
          }
  
     }
